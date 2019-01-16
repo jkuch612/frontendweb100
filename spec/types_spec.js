@@ -38,6 +38,16 @@ describe('data types in javascript', () => {
             expect(typeof v3).toBe("string");
         });
 
+        it('const and let and all that', () => {
+            const PI = 3.1415927
+
+            const flavors = ['chocolate', 'strawberry','vanilla'];
+
+            flavors[0] = 'Mango';
+
+            expect(flavors[0]).toBe('Mango');
+        });
+
         it('why is var so bad', () => {
             var x = 12;
 
@@ -49,5 +59,7 @@ describe('data types in javascript', () => {
             expect(y).toBe(42); // this should fail
 
         });
+
+        
     });
 });
